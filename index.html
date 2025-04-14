@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact IQ Chat</title>
+    
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <button class="new-chat-btn">
+                <span>+ New Chat</span>
+            </button>
+
+            <div class="sidebar-section">
+                <h3>Recent Chats</h3>
+                <div class="chat-history">
+                    <div class="chat-item active">
+                        <div class="chat-icon">C</div>
+                        <div class="chat-info">
+                            <div class="chat-title">Carbon Footprint Analysis</div>
+                            <div class="chat-date">Today</div>
+                        </div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-icon">S</div>
+                        <div class="chat-info">
+                            <div class="chat-title">Sustainability Report</div>
+                            <div class="chat-date">Yesterday</div>
+                        </div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-icon">E</div>
+                        <div class="chat-info">
+                            <div class="chat-title">ESG Investment Research</div>
+                            <div class="chat-date">Apr 12, 2025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Saved Items</h3>
+                <div class="chat-history">
+                    <div class="chat-item">
+                        <div class="chat-icon">R</div>
+                        <div class="chat-info">
+                            <div class="chat-title">Renewable Energy Options</div>
+                            <div class="chat-date">Apr 8, 2025</div>
+                        </div>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-icon">W</div>
+                        <div class="chat-info">
+                            <div class="chat-title">Waste Reduction Plan</div>
+                            <div class="chat-date">Apr 2, 2025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <button class="mobile-menu-btn">☰</button>
+                <div class="logo-icon">IQ</div>
+                <h1>Impact IQ Chat</h1>
+            </div>
+            <div class="user-menu">
+                <div class="user-avatar">JS</div>
+            </div>
+        </header>
+
+        <!-- Main Chat Area -->
+        <main class="main">
+            <div class="welcome-section">
+                <h2 class="welcome-title">Welcome to Impact IQ Chat</h2>
+                <p class="welcome-subtitle">Your AI assistant for sustainability insights, environmental impact analysis, and ESG guidance.</p>
+                
+                <div class="suggestion-grid">
+                    <div class="suggestion-card">
+                        <h3>Carbon Footprint</h3>
+                        <p>Analyze and reduce your carbon emissions with personalized strategies.</p>
+                    </div>
+                    <div class="suggestion-card">
+                        <h3>ESG Reporting</h3>
+                        <p>Get guidance on creating comprehensive ESG reports aligned with global standards.</p>
+                    </div>
+                    <div class="suggestion-card">
+                        <h3>Sustainable Supply Chain</h3>
+                        <p>Optimize your supply chain for sustainability and responsible sourcing.</p>
+                    </div>
+                    <div class="suggestion-card">
+                        <h3>Green Investment</h3>
+                        <p>Discover environmentally responsible investment opportunities and strategies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example conversation (normally hidden until chat starts) -->
+            <div style="display: none;">
+                <div class="message user">
+                    <div class="message-avatar">JS</div>
+                    <div class="message-content">
+                        <p>How can I reduce the carbon footprint of my business?</p>
+                    </div>
+                </div>
+                
+                <div class="message assistant">
+                    <div class="message-avatar">IQ</div>
+                    <div class="message-content">
+                        <p>Great question! Reducing your business carbon footprint starts with measuring your current emissions. Here are some effective strategies:</p>
+                        <ul>
+                            <li>Energy efficiency improvements in your facilities</li>
+                            <li>Transitioning to renewable energy sources</li>
+                            <li>Optimizing logistics and transportation</li>
+                            <li>Implementing remote work policies</li>
+                            <li>Responsible waste management</li>
+                        </ul>
+                        <p>Would you like me to elaborate on any of these areas or help you create a carbon reduction plan?</p>
+                        
+                        <div class="message-actions">
+                            <button class="message-action-btn">Copy</button>
+                            <button class="message-action-btn">Save</button>
+                            <button class="message-action-btn">Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Input Area -->
+        <div class="input-area">
+            <div class="input-options">
+                <button class="option-btn">🎙️</button>
+            </div>
+            <div class="input-container">
+                <textarea class="message-input" placeholder="Message Impact IQ..." rows="1"></textarea>
+                <button class="input-action-btn attach">📎</button>
+                <button class="input-action-btn send">➤</button>
+            </div>
+        </div>
+
+        <!-- Insights Panel -->
+        <aside class="insights-panel">
+            <div class="insights-header">
+                <h2>Impact Insights</h2>
+                <button class="insights-toggle">Customize</button>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <span class="metric-title">Carbon Reduction</span>
+                </div>
+                <div class="metric-value">-24.6%</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 24.6%;"></div>
+                </div>
+                <div class="metric-info">Progress toward 40% reduction goal by 2026</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <span class="metric-title">Energy Efficiency</span>
+                </div>
+                <div class="chart-container">
+                    <!-- Placeholder for a chart -->
+                    <div style="width: 100%; height: 100%; background-color: #E2E8F0; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #94A3B8;">
+                        Energy Usage Chart
+                    </div>
+                </div>
+            </div>
+
+            <div class="insights-header">
+                <h2>Related Resources</h2>
+            </div>
+            
+            <a href="#" class="resource-link">
+                <div class="resource-icon">📄</div>
+                <div class="resource-text">
+                    <div class="resource-title">GHG Protocol Standards</div>
+                    <div class="resource-desc">Comprehensive guidance for emissions accounting</div>
+                </div>
+            </a>
+            
+            <a href="#" class="resource-link">
+                <div class="resource-icon">📊</div>
+                <div class="resource-text">
+                    <div class="resource-title">Carbon Reduction Calculator</div>
+                    <div class="resource-desc">Tool to measure impact of reduction strategies</div>
+                </div>
+            </a>
+            
+            <a href="#" class="resource-link">
+                <div class="resource-icon">📚</div>
+                <div class="resource-text">
+                    <div class="resource-title">Business Sustainability Guide</div>
+                    <div class="resource-desc">Comprehensive guide for business leaders</div>
+                </div>
+            </a>
+        </aside>
+    </div>
+    <script src="scripts/chat.js"></script>
+</body>
+</html>
